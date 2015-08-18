@@ -1,0 +1,6 @@
+*/platforms
+*/plugins
+*/hooks
+*/.cordova
+
+npm-debug.log
