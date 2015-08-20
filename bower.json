@@ -1,0 +1,19 @@
+{
+  "name": "example_app",
+  "version": "0.0.1",
+  "homepage": "https://github.com/tacionery/phonegap_example_app",
+  "authors": [
+    "Tácio Nery <tacionery@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.9.1"
+  }
+}
