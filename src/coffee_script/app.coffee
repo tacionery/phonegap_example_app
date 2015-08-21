@@ -1,5 +1,16 @@
 $(document).on 'ready', ->
-  $('#form').on 'click', (e) ->
+  $('#form').on 'submit', (e) ->
     e.preventDefault()
-    alert "teste"
+    window.localStorage.clear()
+
+    data =
+      city: $("#city").val(),
+      state: $("#state").val()
+
+    window.localStorage.setItem("data", JSON.stringify(data))
+    # console.log JSON.parse(window.localStorage.getItem("data"))
+
+    $.mobile.changePage("map.html")
+    return
+
   return

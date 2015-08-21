@@ -1,21 +1,41 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Tácio PhoneGap App</title>
+
     <meta charset="utf-8" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="msapplication-tap-highlight" content="no" />
     <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <title>Tácio PhoneGap App</title>
+
+    <link rel="stylesheet" type="text/css" href="js/components/jquery-mobile/css/themes/default/jquery.mobile.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/index.css" /> -->
+
   </head>
-  <body>
-    <div class="app">
-      <h1>It's Same Man!</h1>
+  <body class="ui-mobile-viewport ui-overlay-a">
+    <div class="" data-role="page" id="first" data-url="first">
+      <div data-role="header" role="banner" class="ui-header ui-bar-inherit">
+    		<h1 class="ui-title" role="heading" aria-level="1">App Header</h1>
+    	</div>
+      <div role="main" class="ui-content">
+        <h2>It's Same, Man!</h2>
+        <div class="">
+          <p id="city">
+
+          </p>
+          <p id="state">
+
+          </p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
 
+<!-- <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> -->
+<script type="text/javascript" src="js/components/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.mobile.js"></script>
 <script type="text/javascript" src="cordova.js"></script>
-<script type="text/javascript" src="js/components/jquery/jquery.js"></script>
-<script type="text/javascript" src="js/map.js"></script>
+<!-- <script type="text/javascript" src="js/index.js"></script> -->
+<script type="text/javascript" src="js/app.js"></script>
