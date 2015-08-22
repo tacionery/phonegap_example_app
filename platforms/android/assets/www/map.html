@@ -1,22 +1,9 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="msapplication-tap-highlight" content="no" />
-    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <title>Tácio PhoneGap App</title>
-  </head>
-  <body>
-    <div class="app" data-role="page" id="map">
-      <h1>It's Same Man!</h1>
-    </div>
-  </body>
-</html>
-
-<script type="text/javascript" src="cordova.js"></script>
-<script type="text/javascript" src="js/components/jquery/jquery.js"></script>
-<script type="text/javascript" src="js/components/jquery-mobile/jquery.mobile.js"></script>
-<script type="text/javascript" src="js/map.js"></script>
+<div data-role="page" id="map-page" data-url="map-page">
+  <div data-role="header" role="banner" class="ui-header ui-bar-inherit">
+    <h1 class="ui-title" role="heading" aria-level="1">Google Maps</h1>
+  </div>
+  <div role="main" class="ui-content" id="map-canvas">
+    <h4>It's same man!</h4>
+    <!-- map loads here... -->
+  </div>
+</div>
