@@ -1,3 +1,4 @@
-div#map-canvas {
-  height: 400px;
+div#map_canvas {
+  margin: auto;
+  height: 300px;
 }
