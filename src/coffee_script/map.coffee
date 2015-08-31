@@ -8,3 +8,12 @@ $(document).on 'pagecontainershow', (evt, ui) ->
       return
     return
   return
+
+$(document).on 'click', 'a', (e) ->
+  e.preventDefault()
+  href = $(this).attr('href')
+
+  container = $(":mobile-pagecontainer")
+  container.pagecontainer("change", href, { role: "page", transition: "fade" })
+
+  return

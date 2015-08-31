@@ -1,19 +1,19 @@
-$(document).on 'ready', ->
+$(document).on 'ready', () ->
+  return
+
+$(document).on 'submit', '#form', (e) ->
+  console.log "testando"
+  e.preventDefault()
+  # window.localStorage.clear()
   container = $(":mobile-pagecontainer")
-  $('#form').on 'submit', (e) ->
-    e.preventDefault()
-    window.localStorage.clear()
 
-    data =
-      city: $("#city").val(),
-      state: $("#state").val()
+  data =
+    city: $("#city").val(),
+    state: $("#state").val()
 
-    window.localStorage.setItem("data", JSON.stringify(data))
-    # console.log JSON.parse(window.localStorage.getItem("data"))
-    # $.mobile.change("map.html")
+  window.localStorage.setItem("data", JSON.stringify(data))
+  console.log JSON.parse(window.localStorage.getItem("data"))
 
-    container.pagecontainer("change", "map.html", {role: "page", transition: "slide"})
-
-    return
+  container.pagecontainer("change", "map.html", { role: "page", transition: "fade" })
 
   return

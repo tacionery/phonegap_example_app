@@ -7,6 +7,8 @@ var app = {
   },
   onDeviceReady: function() {
     app.receivedEvent('deviceready');
+    var tf = new TestFlight();
+    tf.takeOff(win, fail, "some_team_token");
   },
   receivedEvent: function(id) {
     var listeningElement, parentElement, receivedElement;
